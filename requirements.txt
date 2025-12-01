@@ -1,0 +1,9 @@
+ultralytics
+opencv-python
+pytesseract
+easyocr
+fastapi
+uvicorn
+scikit-learn
+numpy
+python-multipart

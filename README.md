@@ -1,11 +1,3 @@
-Perfect — here is your **clean, fully professional, industry-grade README**
-✅ No emojis
-✅ Recruiter-ready
-✅ Technical tone
-✅ Author formatted exactly as **Saniya Acharya**
-
-👉 **Replace your entire `README.md` with this:**
-
 ---
 
 ````md

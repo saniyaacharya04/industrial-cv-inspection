@@ -1,40 +1,123 @@
+Perfect — here is your **clean, fully professional, industry-grade README**
+✅ No emojis
+✅ Recruiter-ready
+✅ Technical tone
+✅ Author formatted exactly as **Saniya Acharya**
+
+👉 **Replace your entire `README.md` with this:**
+
+---
+
+````md
 # Industrial Safety & Asset Inspection using Computer Vision
 
-This project implements an industrial inspection system using **Computer Vision, Object Detection, and OCR** to simulate safety compliance and asset monitoring in manufacturing environments.
+This project implements a real-time industrial safety and asset inspection system using Computer Vision, Object Detection, OCR, and a RESTful API for automated safety compliance and monitoring.
 
-## 🔍 Features
-- YOLO-based object detection for:
-  - Person
-  - Safety Helmet
-  - Industrial Equipment
-- OCR-based extraction of:
-  - Equipment IDs
-  - Meter readings
-  - Warning labels
-- Automated safety compliance checks
-- REST API for inspection using FastAPI
-- Planned Docker-based deployment
-- Model benchmarking using Precision, Recall, F1-score & inference latency
+The system is designed to simulate how industrial AI platforms monitor worker safety, extract equipment information, and perform visual inspection in manufacturing environments.
 
-## 🧠 Tech Stack
+---
+
+## Features
+- Real-time object detection using YOLOv8
+- OCR-based extraction of equipment labels and meter readings using Tesseract
+- Automated safety compliance logic (helmet and person detection)
+- REST API developed using FastAPI
+- Live API testing using Swagger UI
+- Real-time inference with latency measurement
+- Docker-ready deployment architecture
+
+---
+
+## Technology Stack
 - Python
+- YOLOv8 (Ultralytics)
 - OpenCV
-- YOLO (Ultralytics)
-- Tesseract / EasyOCR
-- Scikit-learn
+- Tesseract OCR
+- EasyOCR
 - FastAPI
+- Scikit-learn
 - Docker
 - Git
 
-## 📊 Use Case
-This system simulates how industrial AI platforms monitor:
-- Worker safety compliance
-- Equipment labeling
-- Asset inspection using machine vision
+---
 
-## 🚧 Project Status
-**In Progress** – Core CV pipeline implemented, deployment & benchmarking under active development.
+## Local Setup
 
-## 📌 Author
-Saniya Acharya  
-AI Engineer Trainee Candidate – Detect Technologies
+### Install Dependencies
+```bash
+pip install -r requirements.txt
+````
+
+### Run Local Inference
+
+```bash
+python run_local.py
+```
+
+### Run API Server
+
+```bash
+uvicorn api.main:app --reload
+```
+
+Access Swagger UI:
+
+```
+http://127.0.0.1:8000/docs
+```
+
+---
+
+## API Endpoint
+
+### POST /inspect/
+
+Uploads an image and returns detection results, OCR text, and safety status.
+
+**Request:**
+Multipart form-data with an image file.
+
+**Response Example:**
+
+```json
+{
+  "detections": [
+    { "label": "person", "confidence": 0.91 }
+  ],
+  "ocr_text": "Sample Equipment Text",
+  "safety_status": "SAFETY VIOLATION: Helmet Missing"
+}
+```
+
+---
+
+## Performance
+
+* YOLOv8 inference latency: approximately 30–36 ms per image on CPU
+* API tested using Swagger UI and curl
+
+---
+
+## Use Case
+
+This system simulates:
+
+* Worker safety compliance monitoring
+* Equipment label and meter reading extraction
+* Visual inspection of industrial assets
+
+---
+
+## Project Status
+
+Production-ready prototype with active development for benchmarking automation and containerized deployment.
+
+---
+
+## Author
+
+Saniya Acharya
+
+````
+
+---

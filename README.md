@@ -1,5 +1,3 @@
----
-
 # Industrial Safety & Asset Inspection using Computer Vision
 
 This project implements a real-time industrial safety and asset inspection system using Computer Vision, Object Detection, OCR, and a RESTful API for automated safety compliance and monitoring.

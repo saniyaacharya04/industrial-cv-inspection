@@ -29,3 +29,7 @@ data/uploads/
 
 # Jupyter
 .ipynb_checkpoints/
+
+# Sample images (user-provided)
+data/samples/*
+!data/samples/.gitkeep

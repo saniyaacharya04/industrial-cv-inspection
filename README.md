@@ -1,5 +1,11 @@
 # Industrial CV Inspection Platform
 
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.124%2B-009688?logo=fastapi)
+![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-00ffff?logo=opencv)
+![Pytest](https://img.shields.io/badge/Tests-Passing-brightgreen?logo=pytest)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 End-to-end industrial safety and asset inspection system using Computer Vision (YOLOv8 + OCR), built as a production-ready FastAPI service.
 
 ---
